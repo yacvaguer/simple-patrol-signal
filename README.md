@@ -2,6 +2,8 @@
 
 **Simple Patrol Signal** is a plugin for Rust that allows server admins to add a dynamic patrol helicopter event to their game. Players can summon a patrol helicopter to their location using a specially designed signal. The helicopter will arrive, patrol the area, and then depart after a configurable duration. This adds an element of excitement and danger, especially during combat situations.
 
+![image](https://codefling.com/uploads/monthly_2024_09/patrol.jpg.fb6998687a2ee59ef1da7b4d3ccce17f.jpg)
+
 ## Features
 
 - **Summon a Patrol Helicopter**: Players can use a special signal item to call a patrol helicopter to their location.
@@ -51,19 +53,25 @@
 
 ### Key Configuration Options
 
-•	Supply Signal Settings: Control the signal’s display name, skin ID, and warm-up time before the helicopter arrives.
-•	Patrol Helicopter Settings: Configure key aspects of the helicopter, including its health, patrol duration, and when it fires rockets.
-•	Loot Settings: Specify which loot containers can drop, along with their chances.
+• Supply Signal Settings: Control the signal’s display name, skin ID, and warm-up time before the helicopter arrives.
+• Patrol Helicopter Settings: Configure key aspects of the helicopter, including its health, patrol duration, and when it fires rockets.
+• Loot Settings: Specify which loot containers can drop, along with their chances.
+
+### Supply Signal Skins
+
+Default Skin: https://steamcommunity.com/sharedfiles/filedetails/?id=3332447426
+
+![images](https://steamuserimages-a.akamaihd.net/ugc/2411203511269108830/6D682EEE399220D3D4ACC2BC50D0B23430E06D42/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
 
 ### Ideas for Server Integration
 
 Here are some ideas on how to integrate the Patrol Heli Signal into your Rust server:
 
-1.	Add to Loot Tables: Make the signal a rare loot item in supply drops, Raidable Bases, or as custom loot.
-2.	Part of /kits: Add the Patrol Heli Signal as part of your kit rewards.
-3.	SkillTree: Include the Patrol Heli Signal as a reward in a SkillTree progression system.
-4.	Marketplace: If you have an in-game marketplace or shop, the Patrol Heli Signal can be a premium purchase.
-5.	Vending Machines: Make it purchasable in vending machines to increase its accessibility while keeping it balanced.
+1. Add to Loot Tables: Make the signal a rare loot item in supply drops, Raidable Bases, or as custom loot.
+2. Part of /kits: Add the Patrol Heli Signal as part of your kit rewards.
+3. SkillTree: Include the Patrol Heli Signal as a reward in a SkillTree progression system.
+4. Marketplace: If you have an in-game marketplace or shop, the Patrol Heli Signal can be a premium purchase.
+5. Vending Machines: Make it purchasable in vending machines to increase its accessibility while keeping it balanced.
 
 ## Contributing
 
@@ -71,10 +79,10 @@ We welcome contributions from the Rust community! Whether it’s fixing a bug, s
 
 ### How to Contribute
 
-1.	Fork the repository: Start by creating your own copy of the project.
-2.	Create a new branch: Make a new branch for your feature or bug fix.
-3.	Make your changes: Implement your code changes and test them thoroughly.
-4.	Submit a pull request: Open a pull request, providing a clear explanation of what your changes do and why they’re necessary.
+1. Fork the repository: Start by creating your own copy of the project.
+2. Create a new branch: Make a new branch for your feature or bug fix.
+3. Make your changes: Implement your code changes and test them thoroughly.
+4. Submit a pull request: Open a pull request, providing a clear explanation of what your changes do and why they’re necessary.
 
 ### Reporting Issues
 
@@ -87,7 +95,7 @@ This project is licensed under the MIT License. You are free to use, modify, and
 ```
 MIT License
 
-Copyright (c) 2024 [Your Name]
+Copyright (c) 2024 Yac Vaguer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
