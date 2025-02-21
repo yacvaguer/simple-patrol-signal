@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("SimplePatrolSignal", "Yac Vaguer", "1.2.0")]
+    [Info("SimplePatrolSignal", "Yac Vaguer", "1.2.1")]
     [Description("Call a Patrol Helicopter to your location using a special supply signal.")]
     public class SimplePatrolSignal : RustPlugin
     {
