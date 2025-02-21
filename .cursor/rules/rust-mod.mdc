@@ -1,0 +1,51 @@
+---
+description: Rust Modding
+globs: 
+---
+Oxide Plugin Development Best Practices
+
+1. Code Structure & Organization
+	•	Follow SOLID principles to keep the plugin modular and maintainable.
+	•	Separate data storage, event handling, and commands into distinct methods or classes.
+	•	Use meaningful and consistent naming conventions for variables, methods, and files.
+
+2. Performance Optimization
+	•	Avoid excessive hooks: Only use necessary hooks to prevent performance degradation.
+	•	Cache data efficiently: Store frequently accessed data in-memory instead of querying repeatedly.
+	•	Use async operations wisely: If interacting with external APIs or databases, avoid blocking the main thread.
+	•	Optimize logging: Use Debug mode for detailed logs and minimize unnecessary logging in production.
+
+3. Security & Permissions
+	•	Implement Oxide’s permission system for admin and player-specific actions.
+	•	Validate all player inputs to prevent exploits or unexpected behavior.
+	•	Use server-side checks to prevent cheating (e.g., validating item transactions, movement, and commands).
+
+4. Compatibility & Updates
+	•	Ensure compatibility with latest Oxide and Rust updates by testing regularly.
+	•	Avoid relying on undocumented Rust functions, as they may change without notice.
+	•	Use dependency management (e.g., avoid hard dependencies unless necessary).
+
+5. Data Storage & Configuration
+	•	Store persistent data using Oxide’s DataFileSystem (.json files) or SQL if needed.
+	•	Provide a configurable settings file so server admins can tweak behavior easily.
+	•	Implement default values and safe fallbacks for missing configuration fields.
+
+6. Event Handling & Hook Usage
+	•	Prioritize efficient event handling: Only subscribe to necessary hooks.
+	•	Use return null; where applicable to avoid unnecessary execution.
+	•	Ensure hooks do not conflict with other plugins by respecting expected return values.
+
+7. Debugging & Logging
+	•	Implement clear error handling to avoid silent failures.
+	•	Use Puts() for basic logging and PrintWarning() for potential issues.
+	•	Allow verbose logging options for debugging purposes but disable them in production.
+
+8. Maintainability & Documentation
+	•	Comment code where necessary, especially for complex logic.
+	•	Provide README documentation explaining configuration and usage.
+	•	Use version control (e.g., GitHub) and semantic versioning (v1.0.0, v1.1.0, etc.).
+
+9. Testing & Deployment
+	•	Test in a local Rust server before deploying to a live environment.
+	•	Use debugging tools like Harmony or Oxide’s Dev Mode for troubleshooting.
+	•	Get community feedback and address bug reports promptly.
