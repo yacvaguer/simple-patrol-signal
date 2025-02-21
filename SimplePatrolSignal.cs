@@ -224,7 +224,7 @@ namespace Oxide.Plugins
 
         private void GiveHeliSignal(BasePlayer player)
         {
-            if (!HasPermission(player))
+            if (!HasAdminPermission(player))
             {
                 player.ChatMessage(GetMessage("NotAllowed", player.UserIDString));
                 return;
@@ -243,6 +243,10 @@ namespace Oxide.Plugins
             return permission.UserHasPermission(player.UserIDString, PermissionUse);
         }
 
+        private bool HasAdminPermission(BasePlayer player)
+        {
+            return permission.UserHasPermission(player.UserIDString, PermissionAdmin);
+        }
         #endregion
 
         #region Cooldown Management
